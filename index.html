@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h3 class="FirstText">Grading System</h3>
+
+            <input type="number" id="ScoreInput">
+
+            <button onclick="checkScore()"> CHECK </button>
+
+        <div id="show"></div>
+    </div>
+
+
+    <div id="Circles">
+        <div id="circle"></div>
+        <div id ="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+        <div id="circle5"></div>
+        <div id="circle6"></div>
+        <div id="circle7"></div>
+        <div id="circle8"></div>
+    </div>
+    <script>
+        function checkScore(){
+            var scoreInput = document.getElementById("ScoreInput").value;
+            var show = document.getElementById("show");
+            
+            if (scoreInput >= 80 && scoreInput <= 100){
+                show.innerHTML = '<h5>A - Excellent! 🙌</h5>';
+                var song = new Audio("Audio/Mohbad-Ask-About-Me-(TrendyBeatz.com).mp3");
+                song.play();
+            } else if (scoreInput >= 70 && scoreInput <= 79){
+                show.innerHTML = '<h5>B - Good! 😊</h5>';
+                var song = new Audio ('Audio/Larry-Gaaga-Ft-Black-Sherif-Letter-From-Overseas-(TrendyBeatz.com).mp3')
+                song.play();
+            } else if (scoreInput >= 60 && scoreInput <= 69){
+                show.innerHTML ='<h5>C - Satisfactory! 👍</h5>';
+                var song = new Audio ("Audio/MI-Abaga-Love-Never-Fails-But-Where-There-Are-Prophecies-Love-Will-Cease-To-Remain-[TrendyBeatz.com].mp3")
+                song.play();
+            } else if (scoreInput >= 50 && scoreInput <= 59){
+                show.innerHTML = '<h5>D - Good! 👌</h5>';
+                var song = new Audio ('Audio/Larry-Gaaga-Ft-Black-Sherif-Letter-From-Overseas-(TrendyBeatz.com).mp3')
+                song.play();
+            } else if (scoreInput >= 40 && scoreInput <= 49){
+                show.innerHTML ='<h5>E - Adequate! 😒</h5>';
+                var song = new Audio ("Audio/MI-Abaga-Love-Never-Fails-But-Where-There-Are-Prophecies-Love-Will-Cease-To-Remain-[TrendyBeatz.com].mp3")
+                song.play();
+            } else if (scoreInput >= 1 && scoreInput <=39){
+                show.innerHTML ='<h5>F - Fail! 😒</h5>';
+                var song = new Audio("Audio/Mohbad-Ask-About-Me-(TrendyBeatz.com).mp3");
+                song.play();
+            } else {
+                show.innerHTML ='<h5>Not valid! ❌</h5>';
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,131 @@
+body{
+    background-color: aquamarine;
+    animation: changeColor 5s infinite alternate; 
+    
+}
+#container{
+  height: 300px;
+  width: 500px;
+  background-color: orangered;
+  border-radius: 2px black;
+  margin-left: 300px;
+  transform: translateY(150px);
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px ;
+}
+
+.FirstText{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding-top: 30px;
+    color: white;
+    box-shadow: 2px, 2px, 4px rgba(92, 92, 92, 0.2);
+}
+
+#ScoreInput{
+        height: 30px;
+        width: 200px;
+        margin-left: 100px; 
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 5px 10px; 
+}
+
+button{
+    height: 35px;
+    width: 80px;
+    margin-left: 10px;
+    background-color: aquamarine;
+    color: orangered;
+    /* transform: translateY(-34px); */
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    
+}
+
+
+#show{
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    margin-left: 135px;
+    margin-top: 20px;
+    color: black;
+}
+
+
+h5{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+
+#circle5{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 1100px;
+}
+
+#circle6{
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 400px;
+    
+}
+
+
+#circle7{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    margin-left: 100px;
+    
+}
+
+#circle8{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    margin-left: 1000px;
+    
+    
+}
+#Circles{
+    animation: moveCircles reverse 20s;
+    animation-iteration-count: infinite;
+    
+}
+
+
+
+
+@keyframes changeColor {
+    0% {
+        background-color: aquamarine;
+    }
+    50%{
+        background-color: lavender;
+    }
+
+    100%{
+        background-color: coral;
+    }
+}
+
+@keyframes moveCircles{
+    from{
+        transform: translateY(20px);
+    }
+    to{
+        transform: translateY(-300px);
+
+    }
+
+} 
+
+
